@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Note App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Rajdhani Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Rajdhani', sans-serif;
+        }
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background: linear-gradient(135deg,#cf9aff,#95c0ff);
+        }
+        .main button{
+            background: linear-gradient(#9418fd, #571094);
+        }
+        .input-box{
+            position: relative;
+            width: 500px;
+            height: 160px;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            margin: 20px 0;
+            outline:  none;
+            border-radius: 5px;
+        }
+        .input-box img{
+            width: 28px;
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            cursor: pointer;
+        }
+        @media(max-width:640px){
+            .input-box{
+                width: 400px;
+            }
+        }
+        @media(max-width:500px){
+            .input-box{
+                width: 300px;
+                margin-left: -10px;
+            }
+        } 
+        @media(max-width:380px){
+            .input-box{
+                width: 200px;
+            }
+        }          
+        
+    </style>
+</head>
+<body>
+
+    <div class="main h-[200vh]  text-white pt-14 pl-14 sm:pt-16 sm:pl-16">
+        <h1 class="flex items-center text-4xl font-bold"><img src="notes.png" alt="" class="w-24">Notes</h1>
+        <button type="button" class="btn flex items-center text-2xl text-white outline-0 border-none rounded-full cursor-pointer w-50 sm:w-60 p-0 mt-7 mb-0 mx-0"><img src="edit1.png" alt="" class="w-14"><span class="mr-6"
+            >Create Notes</span></button>
+        <div class="note-body">
+            <!-- <p contenteditable="true" class="input-box relative w-[500px] h-40 bg-white text-black py-5 my-5 mx-0 outline-none rounded p-4">
+            <img src="delete.png" alt="" class="w-7 absolute bottom-4 right-4 cursor-pointer">
+            </p> -->
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+<script src="tailwind.config.js"></script>
+</html>

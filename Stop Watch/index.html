@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Rajdhani Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Rajdhani', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#2c3e50] flex justify-center items-center h-screen">
+    <div class="text-[#d7dfe4]">
+        <div id="time">
+            <span class="text-4xl sm:text-7xl md:text-9xl font-bold" id="hr">00</span>
+            <span class="txt text-xl sm:text-2xl md:text-4xl font-bold">Hr</span>
+            <span class="text-4xl sm:text-7xl md:text-9xl font-bold" id="min">00</span>
+            <span class="txt text-xl sm:text-2xl md:text-4xl font-bold">Min</span>
+            <span class="text-4xl sm:text-7xl md:text-9xl font-bold" id="sec">00</span>
+            <span class="txt text-xl sm:text-2xl md:text-4xl font-bold">Sec</span>
+            <span class="text-4xl sm:text-7xl md:text-9xl font-bold" id="count">00</span>
+        </div>
+        <div class="text-center mt-10">
+            <button class="py-2 px-6 text-xs sm:text-xl mx-1 sm:mx-3 my-0 text-white border-none cursor-pointer bg-[#1abc9c]" id="start" onclick="start()">Start</button>
+            <button class="py-2 px-6 text-xs sm:text-xl mx-1 sm:mx-3 my-0 text-white border-none cursor-pointer bg-[#3495db]"  id="stop" onclick="stop()">Stop</button>
+            <button class="py-2 px-6 text-xs sm:text-xl mx-1 sm:mx-3 my-0 text-white border-none cursor-pointer bg-[#e74c3c]"  id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="tailwind.config.js"></script>
+
+</html>
