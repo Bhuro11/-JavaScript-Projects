@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <div class="calculator">
+
+            <div class="result_field">
+                <input type="text" class="result_input" placeholder="0">
+            </div>
+            <div class="button_field">
+                <div class="button_row_1">
+                    <button class="btn" value="%" type="button">%</button>
+                    <button class="btn" onclick="clear_input()">CE</button>
+                    <button class="btn" onclick="clear_input()">C</button>
+                    <button class="btn" onclick="remove()"><- </button>
+                </div>
+                <div class="button_row_1">
+                    <button class="btn" onclick="one_of()">1/x</button>
+                    <button class="btn" onclick="power()">X<sup>2</sup></button>
+                    <button class="btn" onclick=" sqrt_value()"><sup>2</sup>√x</button>
+                    <button class="btn" value="/" onclick="return inpt_value(this.value)">&divide;</button>
+                </div>
+                <div class="button_row_1">
+                    <button class="btn" value="7" onclick="return inpt_value(this.value)">7</button>
+                    <button class="btn" value="8" onclick="return inpt_value(this.value)">8</button>
+                    <button class="btn" value="9" onclick="return inpt_value(this.value)">9</button>
+                    <button class="btn" value="*" onclick="return inpt_value(this.value)">X</button>
+                </div>
+                <div class="button_row_1">
+                    <button class="btn" value="4" onclick="return inpt_value(this.value)">4</button>
+                    <button class="btn" value="5" onclick="return inpt_value(this.value)">5</button>
+                    <button class="btn" value="6" onclick="return inpt_value(this.value)">6</button>
+                    <button class="btn" value="-" onclick="return inpt_value(this.value)">-</button>
+                </div>
+                <div class="button_row_1">
+                    <button class="btn" value="1" onclick="return inpt_value(this.value)">1</button>
+                    <button class="btn" value="2" onclick="return inpt_value(this.value)">2</button>
+                    <button class="btn" value="3" onclick="return inpt_value(this.value)">3</button>
+                    <button class="btn" value="+" onclick="return inpt_value(this.value)">+</button>
+                </div>
+                <div class="button_row_1">
+                    <button class="btn" onclick="change_value()"><sup>+</sup>/<lower>-</lower></button>
+                    <button class="btn" value="0" onclick="return inpt_value(this.value)">0</button>
+                    <button class="btn" value="." onclick="return inpt_value(this.value)">.</button>
+                    <button class="btn" id="equal_btn" onclick="final()" onkeypress="final()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascipt.js"></script>
+
+</body>
+
+</html>
